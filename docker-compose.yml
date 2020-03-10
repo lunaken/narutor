@@ -36,9 +36,9 @@ services:
   volumes:
     ## Needed to keep track of other nodes
     - ./tor:/tor
-    networks:
-      default:
-        ipv4_address: 172.18.0.4
+  networks:
+    default:
+      ipv4_address: 172.18.0.4
  relay01:
   image: lunaken/narutor:0.4.4
   #expose:
@@ -509,7 +509,7 @@ services:
   #  - "80"
   networks:
     default:
-      ipv4_address: 172.18.0.5
+      ipv4_address: 172.18.0.6
 networks:
   default:
     ipam:
