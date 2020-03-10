@@ -1,0 +1,4 @@
+FROM lunaken/narutor:0.4.3
+
+RUN touch /tor/torrc.da
+RUN touch /tor/torrc
